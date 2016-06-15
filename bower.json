@@ -1,0 +1,23 @@
+{
+  "name": "dangdang",
+  "authors": [
+    "邓佳艳 <1143463819@qq.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "Swiper": "swiper#^3.3.1",
+    "touch.code.baidu.com": "Clouda-team/touch.code.baidu.com"
+  }
+}

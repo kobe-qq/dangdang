@@ -1,0 +1,392 @@
+body{
+	background-color: #eee;
+	padding: 0;
+	min-width: 300px;
+	max-width: 667px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+form{
+	display: block;
+	margin-top: 0;
+}
+ul,li{
+	list-style: none;
+}
+header,footer,h1,h2,h3,h4,h5,h6,a,ul,li,p,em,input,span,a{
+	font-family: 'Microsoft Yahei';
+	padding: 0;
+	margin: 0;
+}
+input{
+	outline: none;
+	border: none;
+}
+em{
+	font-style: normal;
+	font-weight: 400;
+}
+a{
+	color: #4d525d;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/* 头部 */
+#header{
+	width: 100%;
+	height: 44px;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	.logo{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50px;
+		height: 44px;
+	}
+	.logo a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: url(../image/dd-logo.png) center center no-repeat; 
+		background-size: 30px 21px;
+	}
+	.search{
+		position: relative;
+		height: 44px;
+		margin: 0 50px 0 55px;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	#search{
+		position: relative;
+		height: 30px;
+		margin: 7px auto;
+		border-radius: 18px;
+		background: #e4e4e6;
+		overflow: hidden;
+	}
+	.search .keywords{
+
+		height: 30px;
+		line-height: 30px;
+		background: #e4e4e6;
+		color: #656a73;
+		font-size: 14px;
+		padding: 5px 0 5px 13px;
+		box-sizing: border-box;
+	}
+	.search .submit{
+		float: right;
+		width: 35px;
+		height: 30px;
+		background: #ff463c url(../image/search-btn.png) center center no-repeat;
+		background-size: 40%;
+	}
+	.category{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 49px;
+		height: 44px;
+		font-size: 11px;
+		text-align: center;
+		color: #4d525d;
+	}
+	.category a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		color: #4d525d;
+		overflow: hidden;
+		&::before{
+			content: '';
+			display: block;
+			background: url(../image/header-category.png) center center no-repeat;
+			height: 19px;
+			margin: 7px auto 0 auto;
+			background-size: contain;
+		}
+	}
+	.category a em{
+		display: block;
+		height: 11px;
+		line-height: 11px;
+		margin-top: 2px;
+	}
+}
+
+
+/* banner */
+.swiper-container{
+	margin: 5px 5px 0 5px;
+}
+.swiper-container img{
+	width: 100%;
+}
+/* .swiper-pagination-bullet{
+	background-color: rgba(255,255,255,.8); 
+}
+.swiper-pagination{
+	background-color: rgba(0,0,0,.5);
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+	width: auto;
+	left: 180px;
+	border-radius: 6px;
+	} */
+
+	/* 首页功能区 */
+	.row{	
+		background: #fff;
+		margin: 0 5px;
+		overflow: hidden; 
+
+		.col-xs-3{
+			padding: 2px 0;
+		}
+		.col-xs-3 img{
+			width: 37px;
+			height: 37px;
+			display: block;
+			margin: 5px auto;
+		}
+		.col-xs-3 span{
+			display: block;
+			font-size: 11px;
+			text-align: center;
+		}
+	}
+
+	/* 首页秒杀区 */
+	.seckilling{
+		padding: 0 5px;
+		margin-top: 5px;
+		.seckilling-box{
+			background: #fff;
+		}
+		.seckilling-title{
+			height: 34px;
+			line-height: 34px;
+			padding: 10px 10px 0 10px;
+			margin-bottom: 10px;
+		}
+		.seckilling-title span{
+			height: 18px;
+			display: block;
+			float: left;
+		}
+		.seckilling-title .seckilling-name{
+			color: #4d525d;
+			margin-right: 12px;
+			font-size: 15px;
+			line-height: 18px;
+
+		}
+		.seckilling-title .seckilling-icon{
+			background: url(../image/seckilling-alarm.png) center center no-repeat;
+			background-size: 15px 15px;
+			width: 15px;
+			margin-right: 15px;
+		}
+		.seckilling-title .time span{
+			width: 12px;
+			margin-right: 1px;
+			background: #31343a;
+			color: #fff;
+			font-size: 13px;
+			border-radius: 2px;
+			text-align: center;
+			line-height: 18px;
+		}
+		.seckilling-title .colons{
+			display: inline-block;
+			margin-right: 1px;
+			width: 5px;
+			line-height: 18px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.seckilling-con .row a{
+			padding: 0 5px;
+			display: block;
+		}
+		.seckilling-con .row .col-xs-4{
+			padding: 0;
+		}
+		.seckilling-con .row a img{
+			display: block;
+			width: 100%;
+		}
+		.seckilling-con .row .price{
+			color: #fe435d;
+			padding: 2px 0 4px;
+			font-size: 12px;
+		}
+	}
+
+	/* 服装鞋包会场 */
+	.floor{
+		margin: 5px 5px 0 5px;
+		background-color: #fff;
+		.row a.border-r{
+			display: block;
+			border-right: 1px solid #eee;
+		}
+		h2{
+			position: relative;
+			overflow: hidden;
+			border-bottom: 1px solid #eee;
+			font-weight: bold;
+		}
+		h2 a{
+			display: block;
+			height: 34px;
+			line-height: 34px;
+		}
+		h2 .title{
+			font-size: 15px;
+			color: #4a525d;
+			text-indent: 5px;
+		}
+		h2 .more{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 45px;
+			font-size: 12px;
+			color: #fe435d;
+			background: url(../image/more-arrow.png) no-repeat 28px center;
+			background-size: 12px;
+		}
+		.row{
+			margin: 0;
+		}
+		.row a img{
+			width:100%;
+			height: auto;
+		}
+		.row .col-xs-6,.row .col-xs-12{
+			padding: 0;
+		}
+		.row a.border-b{
+			display: block;
+			border-bottom: 1px solid #eee;
+		}
+	}
+	.banner{
+		margin: 5px 5px 0 5px;
+		img{
+			width: 100%;
+		}
+	}
+	%title{
+		display: block;
+		height: 34px;
+		line-height: 34px;
+		color: #4d525d;
+		font-size: 15px;
+		text-indent: 5px;
+	}
+	.market{
+		margin: 5px 5px 0 5px;
+		background-color: #fff;
+		h2{
+			border-bottom: 1px solid #eee;
+			font-weight: bold;
+		}
+		h2 .title{
+			@extend %title;
+		}
+		.row .col-xs-6{
+			border-bottom: 1px solid #eee;
+			padding: 0;
+		}
+		.row a{
+			width: 100%;
+			display: block;
+		}
+		.row a img{
+			width: 100%;
+			height: auto;
+		}
+		.row .col-xs-6:nth-child(2n+1)::after{
+			content: '';
+			display: block;
+			font-size: 0;
+			width: 0;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-left: 1px solid #eee;
+		}
+	}
+	.tuiguang{
+		.title{
+			@extend %title;
+			font-weight: bold;
+		}
+		.swiper-container{
+			margin: 0;
+			margin-bottom: 34px;
+		}
+		.swiper-container a{
+			background-color: #fff;
+			display: block;
+			margin: 0 5px 5px 0;
+		}
+		.swiper-container a img{
+			width: 100%;
+			display: block;
+		}
+		.swiper-container .tuiguang-con{
+			padding: 0 5px 5px 5px;
+		}
+		.swiper-container p{
+			width: 90px;
+		}
+		.swiper-container .tuiguang-name{
+			display: -webkit-box;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			height: 26px;
+			font-size: 10px;
+			line-height: 14px;
+
+		}
+		.swiper-container .price{
+			color: #fe435d;
+			font-size: 12px;
+			text-align: left;
+		}
+	}
+.download{
+   overflow: hidden;
+   position: relative;
+   .close-download{
+   	  position: absolute;
+   	  display: inline-block;
+   	  right: 10px;
+   	  top: 10px;
+   	  width: 25px;
+   	  height: 25px;
+   	  background: url(../image/close-app-download.png) center center no-repeat;
+      background-size: 25px 25px;
+   }
+   .app-download{
+      display: block;
+      float: left;
+      width: 50%;
+   }
+   .app-download img{
+   	  width: 100%;
+   	  height: auto;
+   }
+}
